@@ -1,0 +1,5 @@
+# Ignorar carpeta de logs
+logs/
+
+# Ignorar archivos con extensión .log
+*.log

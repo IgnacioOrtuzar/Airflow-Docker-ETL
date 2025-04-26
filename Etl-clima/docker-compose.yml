@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: airflow_postgres  # ✅ para facilitar referencia en red
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    restart: always
+
+  airflow-webserver:
+    image: apache/airflow:2.7.1
+    container_name: airflow_webserver  # ✅ útil para debugging y conexión de red
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'True'
+      AIRFLOW__CORE__FERNET_KEY: ''
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'False'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
+      AIRFLOW__WEBSERVER__BASE_URL: "http://localhost:8080"
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: "/opt/airflow/logs"
+      AIRFLOW__LOGGING__REMOTE_LOGGING: 'False'  # ✅ PARA QUE NO BUSQUE SERVIDOR DE LOGS
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./requirements.txt:/requirements.txt
+      - ./logs:/opt/airflow/logs  # ✅ Carpeta de logs
+    ports:
+      - "8080:8080"
+    command: >
+      bash -c "
+        while ! nc -z postgres 5432; do
+          echo 'Waiting for PostgreSQL to be available...';
+          sleep 1;
+        done;
+        pip install -r /requirements.txt &&
+        airflow db upgrade &&
+        airflow users create --username admin --firstname Dayenu --lastname Muñoz --role Admin --email admin@example.com --password admin &&
+        airflow webserver"
+    restart: always
+
+  airflow-scheduler:
+    image: apache/airflow:2.7.1
+    container_name: airflow_scheduler  # ✅ útil para referencia y red
+    depends_on:
+      - airflow-webserver
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__LOGGING__REMOTE_LOGGING: 'False'  # ✅ igual que en webserver
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./logs:/opt/airflow/logs  # ✅ importante para que también acceda a logs
+    command: airflow scheduler
+    restart: always
+
+volumes:
+  postgres-db-volume:
