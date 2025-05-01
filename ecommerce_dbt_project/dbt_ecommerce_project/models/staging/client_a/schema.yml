@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: stg_customers_a
+    description: "Staging de tabla customers para el cliente A"
+    columns:
+      - name: customer_id
+        description: "Identificador único de cliente"
+        tests:
+          - not_null
+          - unique
+
+      - name: email
+        description: "Correo electrónico del cliente"
+        tests:
+          - not_null
+
+  - name: stg_order_items_a
+    description: "Staging de order items con info de almacén para el cliente A"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: warehouse_id
+        tests:
+          - not_null
+
+      - name: warehouse_name
+        tests:
+          - not_null
+
+      - name: product_id
+        tests:
+          - not_null
+
+      - name: quantity
+        tests:
+          - not_null
+
+
+
+  - name: stg_order_a
+    description: "Staging de tablas orders_item para el cliente a"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: store_name
+        tests:
+          - not_null
+
+      - name: store_id
+        tests:
+          - not_null

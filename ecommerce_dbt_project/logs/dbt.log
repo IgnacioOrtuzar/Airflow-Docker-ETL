@@ -1,0 +1,200 @@
+[0m15:30:51.040618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF290E510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF099A710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF35C5950>]}
+
+
+============================== 15:30:51.044377 | 0979a393-ca09-4db8-a426-2fc0175001fc ==============================
+[0m15:30:51.044377 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:30:51.044971 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\iortu\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dbt_ecommerce_project', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:51.057357 [debug] [MainThread]: Starter project path: C:\Users\iortu\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m15:30:51.067627 [info ] [MainThread]: 
+Your new dbt project "dbt_ecommerce_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:30:51.068142 [info ] [MainThread]: Setting up your profile.
+[0m15:32:06.289783 [info ] [MainThread]: Profile dbt_ecommerce_project written to C:\Users\iortu\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:32:06.290882 [debug] [MainThread]: Command `dbt init` succeeded at 15:32:06.290764 after 75.35 seconds
+[0m15:32:06.291195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF3B12EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF3B3BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF3AF3790>]}
+[0m15:32:06.291490 [debug] [MainThread]: Flushing usage events
+[0m15:32:07.411521 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:33:37.347834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE524AE510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE504CA710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE53165950>]}
+
+
+============================== 15:33:37.351223 | b27746d9-6a22-4276-9b1c-a39ad335ec1f ==============================
+[0m15:33:37.351223 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:33:37.352021 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\iortu\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:33:37.362381 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:33:37.362793 [info ] [MainThread]: python version: 3.13.3
+[0m15:33:37.363193 [info ] [MainThread]: python path: C:\Users\iortu\AppData\Local\Programs\Python\Python313\python.exe
+[0m15:33:37.363502 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:33:37.989329 [info ] [MainThread]: Using profiles dir at C:\Users\iortu\.dbt
+[0m15:33:37.989992 [info ] [MainThread]: Using profiles.yml file at C:\Users\iortu\.dbt\profiles.yml
+[0m15:33:37.990378 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\iortu\OneDrive\Escritorio\Proyectos git\ecommerce_dbt_project\dbt_project.yml
+[0m15:33:37.990732 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m15:33:37.991426 [debug] [MainThread]: Command `dbt debug` failed at 15:33:37.991329 after 0.79 seconds
+[0m15:33:37.991689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE7C801E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE7C8395B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE7C6DE7A0>]}
+[0m15:33:37.991956 [debug] [MainThread]: Flushing usage events
+[0m15:33:39.235468 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:36:06.621192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244EC81E510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244EA83A710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244ED4C5950>]}
+
+
+============================== 15:36:06.624972 | 9f834fe5-713f-4923-9c66-e63faba46193 ==============================
+[0m15:36:06.624972 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:36:06.625546 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\iortu\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:36:06.636073 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:36:06.636633 [info ] [MainThread]: python version: 3.13.3
+[0m15:36:06.637077 [info ] [MainThread]: python path: C:\Users\iortu\AppData\Local\Programs\Python\Python313\python.exe
+[0m15:36:06.637499 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:36:07.242921 [info ] [MainThread]: Using profiles dir at C:\Users\iortu\.dbt
+[0m15:36:07.243579 [info ] [MainThread]: Using profiles.yml file at C:\Users\iortu\.dbt\profiles.yml
+[0m15:36:07.243979 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\iortu\OneDrive\Escritorio\Proyectos git\ecommerce_dbt_project\dbt_project.yml
+[0m15:36:07.244398 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m15:36:07.245125 [debug] [MainThread]: Command `dbt debug` failed at 15:36:07.245027 after 0.78 seconds
+[0m15:36:07.245366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024496D21E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024496D595B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024496C027A0>]}
+[0m15:36:07.245661 [debug] [MainThread]: Flushing usage events
+[0m15:36:08.252334 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:37:05.575141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001390E25E510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001390C2EA710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001390EF05950>]}
+
+
+============================== 15:37:05.579302 | 06aad943-718b-48a5-bbeb-80a7aca2007e ==============================
+[0m15:37:05.579302 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:37:05.579939 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\iortu\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:37:05.591403 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:37:05.591915 [info ] [MainThread]: python version: 3.13.3
+[0m15:37:05.592285 [info ] [MainThread]: python path: C:\Users\iortu\AppData\Local\Programs\Python\Python313\python.exe
+[0m15:37:05.592571 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:37:05.643689 [info ] [MainThread]: Using profiles dir at C:\Users\iortu\.dbt
+[0m15:37:05.644160 [info ] [MainThread]: Using profiles.yml file at C:\Users\iortu\.dbt\profiles.yml
+[0m15:37:05.644499 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\iortu\OneDrive\Escritorio\Proyectos git\ecommerce_dbt_project\dbt_project.yml
+[0m15:37:05.645495 [info ] [MainThread]: adapter type: postgres
+[0m15:37:05.645870 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:37:05.646240 [info ] [MainThread]: Configuration:
+[0m15:37:05.646558 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:37:05.646819 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:37:05.647052 [info ] [MainThread]: Required dependencies:
+[0m15:37:05.647293 [debug] [MainThread]: Executing "git --help"
+[0m15:37:05.663181 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:37:05.663634 [debug] [MainThread]: STDERR: "b''"
+[0m15:37:05.664030 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:37:05.664426 [info ] [MainThread]: Connection:
+[0m15:37:05.664817 [info ] [MainThread]:   host: localhost
+[0m15:37:05.665159 [info ] [MainThread]:   port: 5432
+[0m15:37:05.665458 [info ] [MainThread]:   user: ecommerce_user
+[0m15:37:05.665794 [info ] [MainThread]:   database: ecommerce_db
+[0m15:37:05.666217 [info ] [MainThread]:   schema: public
+[0m15:37:05.666547 [info ] [MainThread]:   connect_timeout: 10
+[0m15:37:05.666826 [info ] [MainThread]:   role: None
+[0m15:37:05.667149 [info ] [MainThread]:   search_path: None
+[0m15:37:05.667455 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:37:05.667746 [info ] [MainThread]:   sslmode: None
+[0m15:37:05.668054 [info ] [MainThread]:   sslcert: None
+[0m15:37:05.668370 [info ] [MainThread]:   sslkey: None
+[0m15:37:05.668672 [info ] [MainThread]:   sslrootcert: None
+[0m15:37:05.668940 [info ] [MainThread]:   application_name: dbt
+[0m15:37:05.669165 [info ] [MainThread]:   retries: 1
+[0m15:37:05.669626 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m15:37:05.821685 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:37:05.877135 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:37:05.877460 [debug] [MainThread]: On debug: select 1 as id
+[0m15:37:05.877650 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:37:05.886840 [debug] [MainThread]: SQL status: SELECT 1 in 0.009 seconds
+[0m15:37:05.887592 [debug] [MainThread]: On debug: Close
+[0m15:37:05.888004 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:37:05.888626 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:37:05.889112 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\iortu\OneDrive\Escritorio\Proyectos git\ecommerce_dbt_project\dbt_project.yml> not found
+
+[0m15:37:05.889817 [debug] [MainThread]: Command `dbt debug` failed at 15:37:05.889724 after 0.43 seconds
+[0m15:37:05.890066 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:37:05.890299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001390F5D1BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001390F9F0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001390F42EF10>]}
+[0m15:37:05.890582 [debug] [MainThread]: Flushing usage events
+[0m15:37:06.931950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:39:04.234873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017050B5A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001704EB7A710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017051805950>]}
+
+
+============================== 15:39:04.238341 | cb2d68a8-3d5d-41f5-a811-6dadc10b432b ==============================
+[0m15:39:04.238341 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:39:04.238844 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\iortu\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:39:04.250068 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:39:04.250528 [info ] [MainThread]: python version: 3.13.3
+[0m15:39:04.250913 [info ] [MainThread]: python path: C:\Users\iortu\AppData\Local\Programs\Python\Python313\python.exe
+[0m15:39:04.251346 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:39:04.294742 [info ] [MainThread]: Using profiles dir at C:\Users\iortu\.dbt
+[0m15:39:04.295361 [info ] [MainThread]: Using profiles.yml file at C:\Users\iortu\.dbt\profiles.yml
+[0m15:39:04.295713 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\iortu\OneDrive\Escritorio\Proyectos_git\ecommerce_dbt_project\dbt_project.yml
+[0m15:39:04.296446 [info ] [MainThread]: adapter type: postgres
+[0m15:39:04.296709 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:39:04.296967 [info ] [MainThread]: Configuration:
+[0m15:39:04.297185 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:39:04.297398 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:39:04.297607 [info ] [MainThread]: Required dependencies:
+[0m15:39:04.297829 [debug] [MainThread]: Executing "git --help"
+[0m15:39:04.324824 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:39:04.325262 [debug] [MainThread]: STDERR: "b''"
+[0m15:39:04.325602 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:39:04.325913 [info ] [MainThread]: Connection:
+[0m15:39:04.326292 [info ] [MainThread]:   host: localhost
+[0m15:39:04.326719 [info ] [MainThread]:   port: 5432
+[0m15:39:04.327024 [info ] [MainThread]:   user: ecommerce_user
+[0m15:39:04.327340 [info ] [MainThread]:   database: ecommerce_db
+[0m15:39:04.327760 [info ] [MainThread]:   schema: public
+[0m15:39:04.328072 [info ] [MainThread]:   connect_timeout: 10
+[0m15:39:04.328402 [info ] [MainThread]:   role: None
+[0m15:39:04.328708 [info ] [MainThread]:   search_path: None
+[0m15:39:04.329011 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:39:04.329327 [info ] [MainThread]:   sslmode: None
+[0m15:39:04.329599 [info ] [MainThread]:   sslcert: None
+[0m15:39:04.329892 [info ] [MainThread]:   sslkey: None
+[0m15:39:04.330258 [info ] [MainThread]:   sslrootcert: None
+[0m15:39:04.330598 [info ] [MainThread]:   application_name: dbt
+[0m15:39:04.330884 [info ] [MainThread]:   retries: 1
+[0m15:39:04.331354 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m15:39:04.478527 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:39:04.525730 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:39:04.526045 [debug] [MainThread]: On debug: select 1 as id
+[0m15:39:04.526234 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:39:04.535607 [debug] [MainThread]: SQL status: SELECT 1 in 0.009 seconds
+[0m15:39:04.536400 [debug] [MainThread]: On debug: Close
+[0m15:39:04.536727 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:39:04.537369 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:39:04.537722 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\iortu\OneDrive\Escritorio\Proyectos_git\ecommerce_dbt_project\dbt_project.yml> not found
+
+[0m15:39:04.538396 [debug] [MainThread]: Command `dbt debug` failed at 15:39:04.538304 after 0.41 seconds
+[0m15:39:04.538641 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:39:04.538921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017051EB9BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017052378170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017051D2EF10>]}
+[0m15:39:04.539209 [debug] [MainThread]: Flushing usage events
+[0m15:39:05.747943 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:58:46.471928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018345262510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001834327A710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018345F2D950>]}
+
+
+============================== 17:58:46.476241 | 2e49e396-a49d-4d81-888a-d00856a4cbe4 ==============================
+[0m17:58:46.476241 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:58:46.476792 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\iortu\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --target client_a', 'send_anonymous_usage_stats': 'True'}
+[0m17:58:46.477206 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\iortu\OneDrive\Escritorio\proyectos_git\ecommerce_dbt_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:58:46.477845 [debug] [MainThread]: Command `dbt run` failed at 17:58:46.477752 after 0.19 seconds
+[0m17:58:46.478101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183462D3360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183464384D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018346440050>]}
+[0m17:58:46.478363 [debug] [MainThread]: Flushing usage events
+[0m17:58:48.075466 [debug] [MainThread]: An error was encountered while trying to flush usage events

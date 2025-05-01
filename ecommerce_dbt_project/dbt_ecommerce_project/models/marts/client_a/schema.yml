@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: customer_order_summary
+    description: "Summary of total orders per customer for client A"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+      - name: total_orders
+        tests:
+          - not_null

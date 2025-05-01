@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_customers_b
+    description: "Staging de tabla customers para el cliente b"
+    columns:
+      - name: customer_id
+        description: "Identificador único de cliente"
+        tests:
+          - not_null
+          - unique
+
+      - name: email
+        description: "Correo electrónico del cliente"
+        tests:
+          - not_null

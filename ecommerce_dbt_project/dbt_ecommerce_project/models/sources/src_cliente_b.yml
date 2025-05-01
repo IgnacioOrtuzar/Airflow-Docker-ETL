@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: client_b
+    database: ecommerce_client_b
+    schema: public
+    tables:
+      - name: customers_b
+      - name: orders_b
+      - name: order_items_b
+      - name: stores_b
+      - name: warehouses_b
