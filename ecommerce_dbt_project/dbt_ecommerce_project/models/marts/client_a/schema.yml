@@ -10,3 +10,14 @@ models:
       - name: total_orders
         tests:
           - not_null
+
+  - name: average_stores_sales
+    description: "Summary of total quantity of items by store for client A"
+    columns:
+      - name: stores_name
+        tests:
+          - not_null
+          - unique
+      - name: total_quantity
+        tests:
+          - not_null

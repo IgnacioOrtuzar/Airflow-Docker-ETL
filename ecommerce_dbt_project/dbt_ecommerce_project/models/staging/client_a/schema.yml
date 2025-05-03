@@ -41,7 +41,7 @@ models:
 
 
 
-  - name: stg_order_a
+  - name: stg_orders_a
     description: "Staging de tablas orders_item para el cliente a"
     columns:
       - name: order_id
@@ -55,7 +55,7 @@ models:
 
       - name: store_name
         tests:
-          - not_null
+        - not_null
 
       - name: store_id
         tests:

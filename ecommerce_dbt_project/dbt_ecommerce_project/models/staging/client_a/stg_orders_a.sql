@@ -23,6 +23,7 @@ order_process as (
 
     order_id,
     customer_id,
+    order_date,
     st.store_name,
     st.store_country
 

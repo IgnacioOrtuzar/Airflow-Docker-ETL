@@ -8,8 +8,9 @@ customers as (
     select * from {{ ref('stg_customers_a') }}
 ),
 
-joined as (
+customers_x_total_orders as (
     select
+
         o.customer_id,
         count(*) as total_orders
     from orders o
@@ -18,4 +19,5 @@ joined as (
     group by o.customer_id
 )
 
-select * from joined
+select * from customers_x_total_orders
+
