@@ -1,10 +1,10 @@
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
 
 with orders as (
     select 
 
     id_order,
-    name_store,
+    name_store
 
     from {{ref('stg_orders_b')}}
 ),

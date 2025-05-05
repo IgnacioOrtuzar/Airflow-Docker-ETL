@@ -19,6 +19,7 @@ order_items_process as (
 
         select
         id_order,
+        id_item,
         id_product,
         item_price,
         cast(qty as INTEGER) as quantity,

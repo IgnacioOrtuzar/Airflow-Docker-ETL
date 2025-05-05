@@ -36,12 +36,16 @@ models:
         +schema: stg_client_a
         +enabled: "{{ target.name == 'client_a' }}"
       client_b:
-        +schema: stg_client_b
         +enabled: "{{ target.name == 'client_b' }}"
+      client_c:
+        +schema: stg_client_c
+        +enabled: "{{ target.name == 'client_c' }}"
     marts:
       client_a:
         +schema: mart_client_a
         +enabled: "{{ target.name == 'client_a' }}"
       client_b:
-        +schema: mart_client_b
         +enabled: "{{ target.name == 'client_b' }}"
+      client_c:
+        +schema: mart_client_c
+        +enabled: "{{ target.name == 'client_c' }}"

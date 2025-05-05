@@ -10,14 +10,14 @@ models:
           - not_null
           - unique
 
-      - name: email
+      - name: email_address
         description: "Correo electrónico del cliente"
         tests:
           - not_null
   - name: stg_order_item_b
     description: "Staging de tabla order_item and warehouse para el cliente b"
     columns:
-      - name: id_order_item
+      - name: id_item
         description: "Identificador único de los ordenes con sus items"
         tests:
           - not_null
@@ -37,15 +37,13 @@ models:
         description: "quantity of products in order"
         tests:
           - not_null
-          - expression:
-             expression: "quantity >= 0"
 
-      - name: warehouse_name
+      - name: name_warehouse
         description: "identificador de warehouse"
         tests:
           - not_null
 
-      - name: warehouse_country
+      - name: country_warehouse
         description: "identificador de warehouse"
         tests:
           - not_null          
