@@ -49,3 +49,26 @@ models:
         description: "identificador de warehouse"
         tests:
           - not_null          
+  - name: stg_orders_b
+    description: "Staging de tablas orders_item para el cliente b"
+    columns:
+      - name: id_order
+        tests:
+          - not_null
+          - unique
+
+      - name: id_customer
+        tests:
+          - not_null
+
+      - name: date_order
+        tests:
+          - not_null
+          
+      - name: name_store
+        tests:
+        - not_null
+
+      - name: country_store
+        tests:
+          - not_null

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: ranking_sales_store
+    description: "Ranking sales from stores in client b"
+    columns:
+      - name: name_store
+        description: "Name of each store in ddbb"
+        tests:
+          - not_null
+          - unique
+
+  - name: total_sales
+    description: "Sum of sales for each store"
+    tests:
+      - not_null
