@@ -14,3 +14,38 @@ models:
         description: "Correo electrónico del cliente"
         tests:
           - not_null
+  - name: stg_order_item_b
+    description: "Staging de tabla order_item and warehouse para el cliente b"
+    columns:
+      - name: id_order_item
+        description: "Identificador único de los ordenes con sus items"
+        tests:
+          - not_null
+          - unique
+
+      - name: id_product
+        description: "identificador de los productos"
+        tests:
+          - not_null
+          
+      - name: item_price
+        description: "Price of each products"
+        tests:
+          - not_null
+          
+      - name: quantity
+        description: "quantity of products in order"
+        tests:
+          - not_null
+          - expression:
+             expression: "quantity >= 0"
+
+      - name: warehouse_name
+        description: "identificador de warehouse"
+        tests:
+          - not_null
+
+      - name: warehouse_country
+        description: "identificador de warehouse"
+        tests:
+          - not_null          

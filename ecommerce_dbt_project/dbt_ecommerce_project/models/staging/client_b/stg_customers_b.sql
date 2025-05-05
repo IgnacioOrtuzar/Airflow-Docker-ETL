@@ -10,7 +10,7 @@ customer_data_process as(
     
     select 
     id as customer_id,
-    name as customer_name,
+    name as full_name,
     email_address,
     registration_date as created_at
 
